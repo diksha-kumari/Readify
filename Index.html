@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readify</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container" id="searchPage">
+        <div class="jumbotron">
+            <h1>Readify</h1>
+            <p>Readify is the tool to make any website noise free, read only the content you want without getting
+                deviated from ads, recommendations or other visuals.</p>
+        </div>
+        <div class="container">
+            <div class="form-search">
+                <input name="search" placeholder="Paste website link here..." id="SearchLink">
+                <button onclick="Readify()">Search</button>
+            </div>
+        </div>
+
+        <div class="container permission">
+            <p>You need to take permission to allow Cross origin Request by doing following steps</p>
+            <ol>
+                <li>Click on the request access button below</li>
+                <li>Click on the request temporary acces to demo Server button on next page</li>
+                <li>Come Back to this page again by clicking back button in browser</li>
+            </ol>
+            <a name="" id="" class="btn btn-primary" href="https://cors-anywhere.herokuapp.com/corsdemo" role="button">Request Access here</a>
+        </div>
+    </div>
+
+    <div class="container" id="resultPage">
+
+        <div class="container">
+            <h1 id="headline"><div class="loader"></div>
+            </h1>
+            <div id="content">
+                Readify data is being ready...
+            </div>
+        </div>
+
+        <div class="conatiner button_div">
+            <button type="button" class="btn btn-primary back_btn" onclick="onBack()">Back</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/mozilla/readability/Readability.js" type="application/javascript"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
